@@ -1,0 +1,83 @@
+.bldbanner {
+  min-height: 155px;
+  height: 20rem;
+  position: relative;
+  overflow: hidden;
+  --percentage: 0.5;
+}
+
+.bldbanner .tree,
+.bldbanner .bldview {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.bldbanner .bldview {
+  -webkit-transform: translatex(calc(var(--percentage) * 100px));
+  transform: translatex(calc(var(--percentage) * 100px));
+}
+
+.bldbanner .tree {
+  -webkit-transform: translatex(calc(var(--percentage) * 150px - 25px));
+  transform: translatex(calc(var(--percentage) * 150px - 25px));
+  -webkit-filter: blur(3px);
+  filter: blur(3px);
+}
+
+.bldbanner img,
+.bldbanner video {
+  position: absolute;
+  height: 100%;
+  max-width: none;
+}
+
+.bldbanner .evening {
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  z-index: 20;
+  opacity: calc((0.5 - var(--percentage)) / 0.5);
+}
+
+.bldbanner .afternoon {
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  z-index: 10;
+  opacity: calc(1 - (var(--percentage) - 0.5) / 0.5);
+}
+
+.bldbanner.moving .afternoon,
+.bldbanner.moving .ball,
+.bldbanner.moving .evening,
+.bldbanner.moving .tree,
+.bldbanner.moving .bldview {
+  -webkit-transition: none;
+  transition: none;
+}
+
+.bldbanner .ball {
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  z-index: 10;
+  opacity: calc(1.5 - (var(--percentage) - 0.5) / 0.5);
+  -webkit-transform: translate(calc(100px * var(--percentage)), 22px) rotate(calc(10deg * var(--percentage) + 5deg));
+  transform: translate(calc(100px * var(--percentage)), 22px) rotate(calc(10deg * var(--percentage) + 5deg));
+}
+
+.bldbanner .window-cover {
+  z-index: 20;
+  opacity: calc(var(--percentage) * -2);
+}

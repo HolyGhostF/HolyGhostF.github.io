@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>繁華如夢</title>
+  <icon>https://www.gravatar.com/avatar/58ede3b191e6e00747553c3bce01cc6d</icon>
+  <subtitle>苍茫大地一剑尽挽破,何处繁华笙歌落.</subtitle>
+  <link href="https://holyghostf.github.io/project/atom.xml" rel="self"/>
+  
+  <link href="https://holyghostf.github.io/project/"/>
+  <updated>2023-03-28T14:55:43.613Z</updated>
+  <id>https://holyghostf.github.io/project/</id>
+  
+  <author>
+    <name>繁華如夢</name>
+    <email>fangxingrumeng-c@qq.com</email>
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>开心和忙碌的一天</title>
+    <link href="https://holyghostf.github.io/project/2023/03/28/%E5%BC%80%E5%BF%83%E5%92%8C%E5%BF%99%E7%A2%8C%E7%9A%84%E4%B8%80%E5%A4%A9/"/>
+    <id>https://holyghostf.github.io/project/2023/03/28/%E5%BC%80%E5%BF%83%E5%92%8C%E5%BF%99%E7%A2%8C%E7%9A%84%E4%B8%80%E5%A4%A9/</id>
+    <published>2023-03-28T07:54:50.000Z</published>
+    <updated>2023-03-28T14:55:43.613Z</updated>
+    
+    
+    
+    
+    <category term="生活日常" scheme="https://holyghostf.github.io/project/categories/%E7%94%9F%E6%B4%BB%E6%97%A5%E5%B8%B8/"/>
+    
+    
+    <category term="生活" scheme="https://holyghostf.github.io/project/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+    <category term="办公" scheme="https://holyghostf.github.io/project/tags/%E5%8A%9E%E5%85%AC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>记录一次去珠海的旅行</title>
+    <link href="https://holyghostf.github.io/project/2023/03/28/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1%E5%8E%BB%E7%8F%A0%E6%B5%B7%E7%9A%84%E6%97%85%E8%A1%8C/"/>
+    <id>https://holyghostf.github.io/project/2023/03/28/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1%E5%8E%BB%E7%8F%A0%E6%B5%B7%E7%9A%84%E6%97%85%E8%A1%8C/</id>
+    <published>2023-03-28T07:52:55.000Z</published>
+    <updated>2023-03-28T14:54:53.678Z</updated>
+    
+    
+    
+    
+    <category term="大学生涯" scheme="https://holyghostf.github.io/project/categories/%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%B6%AF/"/>
+    
+    
+    <category term="生活" scheme="https://holyghostf.github.io/project/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+    <category term="旅行" scheme="https://holyghostf.github.io/project/tags/%E6%97%85%E8%A1%8C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>记录一次去中山的旅行</title>
+    <link href="https://holyghostf.github.io/project/2023/03/28/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1%E5%8E%BB%E4%B8%AD%E5%B1%B1%E7%9A%84%E6%97%85%E8%A1%8C/"/>
+    <id>https://holyghostf.github.io/project/2023/03/28/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1%E5%8E%BB%E4%B8%AD%E5%B1%B1%E7%9A%84%E6%97%85%E8%A1%8C/</id>
+    <published>2023-03-28T07:51:16.000Z</published>
+    <updated>2023-03-28T14:55:02.973Z</updated>
+    
+    
+    
+    
+    <category term="大学生涯" scheme="https://holyghostf.github.io/project/categories/%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%B6%AF/"/>
+    
+    
+    <category term="生活" scheme="https://holyghostf.github.io/project/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+    <category term="旅行" scheme="https://holyghostf.github.io/project/tags/%E6%97%85%E8%A1%8C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://holyghostf.github.io/project/2023/03/27/hello-world/"/>
+    <id>https://holyghostf.github.io/project/2023/03/27/hello-world/</id>
+    <published>2023-03-27T01:07:11.984Z</published>
+    <updated>2023-03-28T14:57:17.787Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
+      
+    
+    
+    
+    <category term="前端开发" scheme="https://holyghostf.github.io/project/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    
+    <category term="Hexo" scheme="https://holyghostf.github.io/project/tags/Hexo/"/>
+    
+    <category term="前端开发" scheme="https://holyghostf.github.io/project/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="butterfly" scheme="https://holyghostf.github.io/project/tags/butterfly/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用 Github Pages 和 Hexo 搭建自己的独立博客2</title>
+    <link href="https://holyghostf.github.io/project/2021/03/31/hexo%E6%94%B9%E5%8A%A82/"/>
+    <id>https://holyghostf.github.io/project/2021/03/31/hexo%E6%94%B9%E5%8A%A82/</id>
+    <published>2021-03-31T05:26:54.000Z</published>
+    <updated>2023-03-28T14:58:16.158Z</updated>
+    
+    
+    <summary type="html">记录搭建博客的经历~</summary>
+    
+    
+    
+    <category term="前端开发" scheme="https://holyghostf.github.io/project/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    
+    <category term="Hexo" scheme="https://holyghostf.github.io/project/tags/Hexo/"/>
+    
+    <category term="前端开发" scheme="https://holyghostf.github.io/project/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="butterfly" scheme="https://holyghostf.github.io/project/tags/butterfly/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用 Github Pages 和 Hexo 搭建自己的独立博客</title>
+    <link href="https://holyghostf.github.io/project/2021/03/31/hexo%E6%94%B9%E5%8A%A81/"/>
+    <id>https://holyghostf.github.io/project/2021/03/31/hexo%E6%94%B9%E5%8A%A81/</id>
+    <published>2021-03-31T05:26:54.000Z</published>
+    <updated>2023-03-29T01:45:17.892Z</updated>
+    
+    
+    <summary type="html">记录搭建博客的经历~</summary>
+    
+    
+    
+    <category term="前端开发" scheme="https://holyghostf.github.io/project/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    
+    <category term="Hexo" scheme="https://holyghostf.github.io/project/tags/Hexo/"/>
+    
+    <category term="前端开发" scheme="https://holyghostf.github.io/project/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="butterfly" scheme="https://holyghostf.github.io/project/tags/butterfly/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>安知鱼配置</title>
+    <link href="https://holyghostf.github.io/project/2021/03/31/%E6%96%87%E7%AB%A01/"/>
+    <id>https://holyghostf.github.io/project/2021/03/31/%E6%96%87%E7%AB%A01/</id>
+    <published>2021-03-31T05:26:54.000Z</published>
+    <updated>2023-03-28T14:56:40.334Z</updated>
+    
+    <content type="html"><![CDATA[<div align="center" class="aspect-ratio">  <iframe    src="https://player.bilibili.com/player.html?aid=556933559&&page=1&as_wide=1&high_quality=1&danmaku=0"    scrolling="no"    border="0"    frameborder="no"    framespacing="0"    high_quality="1"    danmaku="1"    allowfullscreen="true"  ></iframe></div>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;div align=&quot;center&quot; class=&quot;aspect-ratio&quot;&gt;
+  &lt;iframe
+    src=&quot;https://player.bilibili.com/player.html?aid=556933559&amp;&amp;page=1&amp;as_wide=1&amp;high_qu</summary>
+      
+    
+    
+    
+    <category term="我的开发" scheme="https://holyghostf.github.io/project/categories/%E6%88%91%E7%9A%84%E5%BC%80%E5%8F%91/"/>
+    
+    
+    <category term="Hexo" scheme="https://holyghostf.github.io/project/tags/Hexo/"/>
+    
+    <category term="前端开发" scheme="https://holyghostf.github.io/project/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="butterfly" scheme="https://holyghostf.github.io/project/tags/butterfly/"/>
+    
+  </entry>
+  
+</feed>

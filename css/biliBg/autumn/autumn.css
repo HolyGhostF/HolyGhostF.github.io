@@ -1,0 +1,55 @@
+.blqbanner {
+  height: 15rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.blqbanner > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /*    将图片上下左右居中*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  --offset: 0px;
+  --blur: 2px;
+}
+
+.blqbanner > div > img {
+  display: flex;
+  width: 110%;
+  /*    图片需要左右移动，预先设置的宽一些*/
+  height: 100%;
+  object-fit: cover;
+  /*    将图片按照比例填满容器*/
+  transform: translateX(var(--offset));
+  filter: blur(var(--blur));
+  transition: 0.3s;
+}
+.blqbanner > div:nth-child(1) > img {
+  --offset: 1.38426px;
+  --blur: 0.226766px;
+}
+.blqbanner > div:nth-child(2) > img {
+  --offset: 1.79954px;
+  --blur: 0.0724451px;
+}
+.blqbanner > div:nth-child(3) > img {
+  --offset: 2.3394px;
+  --blur: 1.02924px;
+}
+.blqbanner > div:nth-child(4) > img {
+  --offset: 3.04122px;
+  --blur: 3.09714px;
+}
+.blqbanner > div:nth-child(5) > img {
+  --offset: 3.95358px;
+  --blur: 6.27615px;
+}
+.blqbanner > div:nth-child(6) > img {
+  --offset: 5.13966px;
+  --blur: 10.5663px;
+}
