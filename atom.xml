@@ -3,11 +3,11 @@
   <title>繁華如夢</title>
   <icon>https://www.gravatar.com/avatar/58ede3b191e6e00747553c3bce01cc6d</icon>
   <subtitle>苍茫大地一剑尽挽破,何处繁华笙歌落.</subtitle>
-  <link href="https://holyghostf.github.io/project/atom.xml" rel="self"/>
+  <link href="https://holyghostf.github.io/atom.xml" rel="self"/>
   
-  <link href="https://holyghostf.github.io/project/"/>
+  <link href="https://holyghostf.github.io/"/>
   <updated>2023-03-28T14:55:43.613Z</updated>
-  <id>https://holyghostf.github.io/project/</id>
+  <id>https://holyghostf.github.io/</id>
   
   <author>
     <name>繁華如夢</name>
@@ -18,65 +18,65 @@
   
   <entry>
     <title>开心和忙碌的一天</title>
-    <link href="https://holyghostf.github.io/project/2023/03/28/%E5%BC%80%E5%BF%83%E5%92%8C%E5%BF%99%E7%A2%8C%E7%9A%84%E4%B8%80%E5%A4%A9/"/>
-    <id>https://holyghostf.github.io/project/2023/03/28/%E5%BC%80%E5%BF%83%E5%92%8C%E5%BF%99%E7%A2%8C%E7%9A%84%E4%B8%80%E5%A4%A9/</id>
+    <link href="https://holyghostf.github.io/2023/03/28/%E5%BC%80%E5%BF%83%E5%92%8C%E5%BF%99%E7%A2%8C%E7%9A%84%E4%B8%80%E5%A4%A9/"/>
+    <id>https://holyghostf.github.io/2023/03/28/%E5%BC%80%E5%BF%83%E5%92%8C%E5%BF%99%E7%A2%8C%E7%9A%84%E4%B8%80%E5%A4%A9/</id>
     <published>2023-03-28T07:54:50.000Z</published>
     <updated>2023-03-28T14:55:43.613Z</updated>
     
     
     
     
-    <category term="生活日常" scheme="https://holyghostf.github.io/project/categories/%E7%94%9F%E6%B4%BB%E6%97%A5%E5%B8%B8/"/>
+    <category term="生活日常" scheme="https://holyghostf.github.io/categories/%E7%94%9F%E6%B4%BB%E6%97%A5%E5%B8%B8/"/>
     
     
-    <category term="生活" scheme="https://holyghostf.github.io/project/tags/%E7%94%9F%E6%B4%BB/"/>
+    <category term="生活" scheme="https://holyghostf.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
     
-    <category term="办公" scheme="https://holyghostf.github.io/project/tags/%E5%8A%9E%E5%85%AC/"/>
+    <category term="办公" scheme="https://holyghostf.github.io/tags/%E5%8A%9E%E5%85%AC/"/>
     
   </entry>
   
   <entry>
     <title>记录一次去珠海的旅行</title>
-    <link href="https://holyghostf.github.io/project/2023/03/28/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1%E5%8E%BB%E7%8F%A0%E6%B5%B7%E7%9A%84%E6%97%85%E8%A1%8C/"/>
-    <id>https://holyghostf.github.io/project/2023/03/28/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1%E5%8E%BB%E7%8F%A0%E6%B5%B7%E7%9A%84%E6%97%85%E8%A1%8C/</id>
+    <link href="https://holyghostf.github.io/2023/03/28/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1%E5%8E%BB%E7%8F%A0%E6%B5%B7%E7%9A%84%E6%97%85%E8%A1%8C/"/>
+    <id>https://holyghostf.github.io/2023/03/28/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1%E5%8E%BB%E7%8F%A0%E6%B5%B7%E7%9A%84%E6%97%85%E8%A1%8C/</id>
     <published>2023-03-28T07:52:55.000Z</published>
     <updated>2023-03-28T14:54:53.678Z</updated>
     
     
     
     
-    <category term="大学生涯" scheme="https://holyghostf.github.io/project/categories/%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%B6%AF/"/>
+    <category term="大学生涯" scheme="https://holyghostf.github.io/categories/%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%B6%AF/"/>
     
     
-    <category term="生活" scheme="https://holyghostf.github.io/project/tags/%E7%94%9F%E6%B4%BB/"/>
+    <category term="生活" scheme="https://holyghostf.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
     
-    <category term="旅行" scheme="https://holyghostf.github.io/project/tags/%E6%97%85%E8%A1%8C/"/>
+    <category term="旅行" scheme="https://holyghostf.github.io/tags/%E6%97%85%E8%A1%8C/"/>
     
   </entry>
   
   <entry>
     <title>记录一次去中山的旅行</title>
-    <link href="https://holyghostf.github.io/project/2023/03/28/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1%E5%8E%BB%E4%B8%AD%E5%B1%B1%E7%9A%84%E6%97%85%E8%A1%8C/"/>
-    <id>https://holyghostf.github.io/project/2023/03/28/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1%E5%8E%BB%E4%B8%AD%E5%B1%B1%E7%9A%84%E6%97%85%E8%A1%8C/</id>
+    <link href="https://holyghostf.github.io/2023/03/28/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1%E5%8E%BB%E4%B8%AD%E5%B1%B1%E7%9A%84%E6%97%85%E8%A1%8C/"/>
+    <id>https://holyghostf.github.io/2023/03/28/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1%E5%8E%BB%E4%B8%AD%E5%B1%B1%E7%9A%84%E6%97%85%E8%A1%8C/</id>
     <published>2023-03-28T07:51:16.000Z</published>
     <updated>2023-03-28T14:55:02.973Z</updated>
     
     
     
     
-    <category term="大学生涯" scheme="https://holyghostf.github.io/project/categories/%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%B6%AF/"/>
+    <category term="大学生涯" scheme="https://holyghostf.github.io/categories/%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%B6%AF/"/>
     
     
-    <category term="生活" scheme="https://holyghostf.github.io/project/tags/%E7%94%9F%E6%B4%BB/"/>
+    <category term="生活" scheme="https://holyghostf.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
     
-    <category term="旅行" scheme="https://holyghostf.github.io/project/tags/%E6%97%85%E8%A1%8C/"/>
+    <category term="旅行" scheme="https://holyghostf.github.io/tags/%E6%97%85%E8%A1%8C/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="https://holyghostf.github.io/project/2023/03/27/hello-world/"/>
-    <id>https://holyghostf.github.io/project/2023/03/27/hello-world/</id>
+    <link href="https://holyghostf.github.io/2023/03/27/hello-world/"/>
+    <id>https://holyghostf.github.io/2023/03/27/hello-world/</id>
     <published>2023-03-27T01:07:11.984Z</published>
     <updated>2023-03-28T14:57:17.787Z</updated>
     
@@ -90,21 +90,21 @@
     
     
     
-    <category term="前端开发" scheme="https://holyghostf.github.io/project/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    <category term="前端开发" scheme="https://holyghostf.github.io/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
     
     
-    <category term="Hexo" scheme="https://holyghostf.github.io/project/tags/Hexo/"/>
+    <category term="Hexo" scheme="https://holyghostf.github.io/tags/Hexo/"/>
     
-    <category term="前端开发" scheme="https://holyghostf.github.io/project/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    <category term="前端开发" scheme="https://holyghostf.github.io/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
     
-    <category term="butterfly" scheme="https://holyghostf.github.io/project/tags/butterfly/"/>
+    <category term="butterfly" scheme="https://holyghostf.github.io/tags/butterfly/"/>
     
   </entry>
   
   <entry>
     <title>使用 Github Pages 和 Hexo 搭建自己的独立博客</title>
-    <link href="https://holyghostf.github.io/project/2021/03/31/hexo%E6%94%B9%E5%8A%A81/"/>
-    <id>https://holyghostf.github.io/project/2021/03/31/hexo%E6%94%B9%E5%8A%A81/</id>
+    <link href="https://holyghostf.github.io/2021/03/31/hexo%E6%94%B9%E5%8A%A81/"/>
+    <id>https://holyghostf.github.io/2021/03/31/hexo%E6%94%B9%E5%8A%A81/</id>
     <published>2021-03-31T05:26:54.000Z</published>
     <updated>2023-03-29T01:45:17.892Z</updated>
     
@@ -113,21 +113,21 @@
     
     
     
-    <category term="前端开发" scheme="https://holyghostf.github.io/project/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    <category term="前端开发" scheme="https://holyghostf.github.io/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
     
     
-    <category term="Hexo" scheme="https://holyghostf.github.io/project/tags/Hexo/"/>
+    <category term="Hexo" scheme="https://holyghostf.github.io/tags/Hexo/"/>
     
-    <category term="前端开发" scheme="https://holyghostf.github.io/project/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    <category term="前端开发" scheme="https://holyghostf.github.io/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
     
-    <category term="butterfly" scheme="https://holyghostf.github.io/project/tags/butterfly/"/>
+    <category term="butterfly" scheme="https://holyghostf.github.io/tags/butterfly/"/>
     
   </entry>
   
   <entry>
     <title>使用 Github Pages 和 Hexo 搭建自己的独立博客2</title>
-    <link href="https://holyghostf.github.io/project/2021/03/31/hexo%E6%94%B9%E5%8A%A82/"/>
-    <id>https://holyghostf.github.io/project/2021/03/31/hexo%E6%94%B9%E5%8A%A82/</id>
+    <link href="https://holyghostf.github.io/2021/03/31/hexo%E6%94%B9%E5%8A%A82/"/>
+    <id>https://holyghostf.github.io/2021/03/31/hexo%E6%94%B9%E5%8A%A82/</id>
     <published>2021-03-31T05:26:54.000Z</published>
     <updated>2023-03-28T14:58:16.158Z</updated>
     
@@ -136,21 +136,21 @@
     
     
     
-    <category term="前端开发" scheme="https://holyghostf.github.io/project/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    <category term="前端开发" scheme="https://holyghostf.github.io/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
     
     
-    <category term="Hexo" scheme="https://holyghostf.github.io/project/tags/Hexo/"/>
+    <category term="Hexo" scheme="https://holyghostf.github.io/tags/Hexo/"/>
     
-    <category term="前端开发" scheme="https://holyghostf.github.io/project/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    <category term="前端开发" scheme="https://holyghostf.github.io/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
     
-    <category term="butterfly" scheme="https://holyghostf.github.io/project/tags/butterfly/"/>
+    <category term="butterfly" scheme="https://holyghostf.github.io/tags/butterfly/"/>
     
   </entry>
   
   <entry>
     <title>安知鱼配置</title>
-    <link href="https://holyghostf.github.io/project/2021/03/31/%E6%96%87%E7%AB%A01/"/>
-    <id>https://holyghostf.github.io/project/2021/03/31/%E6%96%87%E7%AB%A01/</id>
+    <link href="https://holyghostf.github.io/2021/03/31/%E6%96%87%E7%AB%A01/"/>
+    <id>https://holyghostf.github.io/2021/03/31/%E6%96%87%E7%AB%A01/</id>
     <published>2021-03-31T05:26:54.000Z</published>
     <updated>2023-03-28T14:56:40.334Z</updated>
     
@@ -166,14 +166,14 @@
     
     
     
-    <category term="我的开发" scheme="https://holyghostf.github.io/project/categories/%E6%88%91%E7%9A%84%E5%BC%80%E5%8F%91/"/>
+    <category term="我的开发" scheme="https://holyghostf.github.io/categories/%E6%88%91%E7%9A%84%E5%BC%80%E5%8F%91/"/>
     
     
-    <category term="Hexo" scheme="https://holyghostf.github.io/project/tags/Hexo/"/>
+    <category term="Hexo" scheme="https://holyghostf.github.io/tags/Hexo/"/>
     
-    <category term="前端开发" scheme="https://holyghostf.github.io/project/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    <category term="前端开发" scheme="https://holyghostf.github.io/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
     
-    <category term="butterfly" scheme="https://holyghostf.github.io/project/tags/butterfly/"/>
+    <category term="butterfly" scheme="https://holyghostf.github.io/tags/butterfly/"/>
     
   </entry>
   
