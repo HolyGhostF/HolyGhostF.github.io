@@ -6,7 +6,7 @@ var commentBarrageConfig = {
   //twikoo部署地址腾讯云的为环境ID
   twikooUrl: "https://myDreamTwikoo.zeabur.app",
   //token获取见上方
-  accessToken: "81726eaed703498fbc875eb318597fd5",
+  accessToken: "44fd7d73d90e48ce9e893475f70aa232",
   pageUrl: window.location.pathname,
   barrageTimer: [],
   barrageList: [],
