@@ -1,5 +1,5 @@
 (() => {
-  fetch("https://v6-widget.51.la/v6/Jp8wwGQpp21utaFQ/quote.js")
+  fetch("https://v6-widget.51.la/v6/K16eUEIZ5lSv62zW/quote.js")
     .then(res => res.text())
     .then(data => {
       let title = ["最近活跃", "今日人数", "今日访问", "昨日人数", "昨日访问", "本月访问", "总访问量"];
