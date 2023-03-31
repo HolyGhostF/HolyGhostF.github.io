@@ -402,7 +402,147 @@ document.addEventListener('visibilitychange', function () {
       document.title = OriginTitile
     }, 2000)
   }
-})</script><script data-pjax src="https://npm.elemecdn.com/anzhiyu-blog@2.1.1/js/catalog-bar/catalog-bar.js"></script><script async data-pjax src="https://npm.elemecdn.com/anzhiyu-blog@2.1.1/js/categoryBar/categoryBar.js"></script><script async data-pjax src="https://npm.elemecdn.com/anzhiyu-blog@2.2.1/js/waterfall/waterfall.js"></script><script async src="https://npm.elemecdn.com/acrylic-static/rightmenu/rightmenu.js"></script><script charset="UTF-8" id="LA_COLLECT" src="https://sdk.51.la/js-sdk-pro.min.js"></script><script src="https://sdk.51.la/perf/js-sdk-perf.min.js" crossorigin="anonymous"></script><script>LA.init({id: "K16eUEIZ5lSv62zW", ck: "K16eUEIZ5lSv62zW"});
+})</script><div class="js-pjax"><script data-pjax="data-pjax">var commentBarrageConfig = {
+  maxBarrage: 1,
+  barrageTime: 4000,
+  twikooUrl: "https://myDreamTwikoo.zeabur.app",
+  accessToken: "44fd7d73d90e48ce9e893475f70aa232",
+  pageUrl: window.location.pathname,
+  barrageTimer: [],
+  barrageList: [],
+  barrageIndex: 0,
+  dom: document.querySelector(".comment-barrage"),
+};
+var commentInterval = null;
+var hoverOnCommentBarrage = false;
+
+$(".comment-barrage").hover(
+  function () {
+    hoverOnCommentBarrage = true;
+    console.log("热评悬浮");
+  },
+  function () {
+    hoverOnCommentBarrage = false;
+    console.log("停止悬浮");
+  }
+);
+
+function initCommentBarrage() {
+  if (!commentBarrageConfig.dom) return;
+  // console.log("开始创建热评")
+
+  var data = JSON.stringify({
+    event: "COMMENT_GET",
+    "commentBarrageConfig.accessToken": commentBarrageConfig.accessToken,
+    url: commentBarrageConfig.pageUrl,
+  });
+  var xhr = new XMLHttpRequest();
+  xhr.withCredentials = true;
+  xhr.addEventListener("readystatechange", function () {
+    if (this.readyState === 4) {
+      commentBarrageConfig.barrageList = commentLinkFilter(JSON.parse(this.responseText).data);
+      commentBarrageConfig.dom.innerHTML = "";
+    }
+  });
+  xhr.open("POST", commentBarrageConfig.twikooUrl);
+  xhr.setRequestHeader("Content-Type", "application/json");
+  xhr.send(data);
+
+  clearInterval(commentInterval);
+  commentInterval = null;
+
+  commentInterval = setInterval(() => {
+    if (commentBarrageConfig.barrageList.length && !hoverOnCommentBarrage) {
+      popCommentBarrage(commentBarrageConfig.barrageList[commentBarrageConfig.barrageIndex]);
+      commentBarrageConfig.barrageIndex += 1;
+      commentBarrageConfig.barrageIndex %= commentBarrageConfig.barrageList.length;
+    }
+    if (
+      commentBarrageConfig.barrageTimer.length >
+        (commentBarrageConfig.barrageList.length > commentBarrageConfig.maxBarrage
+          ? commentBarrageConfig.maxBarrage
+          : commentBarrageConfig.barrageList.length) &&
+      !hoverOnCommentBarrage
+    ) {
+      removeCommentBarrage(commentBarrageConfig.barrageTimer.shift());
+    }
+  }, commentBarrageConfig.barrageTime);
+}
+function commentLinkFilter(data) {
+  data.sort((a, b) => {
+    return a.created - b.created;
+  });
+  let newData = [];
+  data.forEach(item => {
+    newData.push(...getCommentReplies(item));
+  });
+  return newData;
+}
+function getCommentReplies(item) {
+  if (item.replies) {
+    let replies = [item];
+    item.replies.forEach(item => {
+      replies.push(...getCommentReplies(item));
+    });
+    return replies;
+  } else {
+    return [];
+  }
+}
+function popCommentBarrage(data) {
+  let barrage = document.createElement("div");
+  // let width = commentBarrageConfig.dom.clientWidth;
+  // let height = commentBarrageConfig.dom.clientHeight;
+  barrage.className = "comment-barrage-item";
+  barrage.innerHTML = `
+      <div class="barrageHead">
+        <a class="barrageTitle ${
+          data.mailMd5 === "d338f432ad0bf2f61e5fe4ad1642725d" ? "barrageBloggerTitle" : ""
+        }" href="javascript:anzhiyu.scrollTo('#post-comment')"">
+          ${data.mailMd5 === "d338f432ad0bf2f61e5fe4ad1642725d" ? "博主" : "热评"}
+        </a>
+        <div class="barrageNick">${data.nick}</div>
+        <img class="barrageAvatar" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cravatar.cn/avatar/${data.mailMd5}"/>
+        <a class="comment-barrage-close" href="javascript:anzhiyu.switchCommentBarrage()"><i class="fa-solid fa-xmark"></i></a>
+      </div>
+      <a class="barrageContent" href="#${data.id}">${data.comment}</a>
+    `;
+  commentBarrageConfig.barrageTimer.push(barrage);
+  commentBarrageConfig.dom.append(barrage);
+}
+function removeCommentBarrage(barrage) {
+  barrage.className = "comment-barrage-item out";
+
+  setTimeout(() => {
+    if (commentBarrageConfig.dom && commentBarrageConfig.dom.contains(barrage)) {
+      commentBarrageConfig.dom.removeChild(barrage);
+    }
+  }, 1000);
+}
+
+// 自动隐藏
+document.addEventListener(
+  "scroll",
+  btf.throttle(function () {
+    var a = (window.scrollY, document.querySelector(".comment-barrage")),
+      t = document.getElementById("post-comment");
+    t && a && 768 < document.body.clientWidth && (a.style.bottom = !isInViewPortOfOne(t) ? "0" : "-200px");
+  }, 200),
+  { passive: true }
+),
+  initCommentBarrage();
+
+if (localStorage.getItem("commentBarrageSwitch") !== "false") {
+  $(".comment-barrage").show();
+  $(".menu-commentBarrage-text").text("关闭热评");
+} else {
+  $(".comment-barrage").hide();
+  $(".menu-commentBarrage-text").text("显示热评");
+}
+
+document.addEventListener("pjax:send", function () {
+  clearInterval(commentInterval);
+});</script></div><script data-pjax src="https://npm.elemecdn.com/anzhiyu-blog@2.1.1/js/catalog-bar/catalog-bar.js"></script><script async data-pjax src="https://npm.elemecdn.com/anzhiyu-blog@2.1.1/js/categoryBar/categoryBar.js"></script><script async data-pjax src="https://npm.elemecdn.com/anzhiyu-blog@2.2.1/js/waterfall/waterfall.js"></script><script async src="https://npm.elemecdn.com/acrylic-static/rightmenu/rightmenu.js"></script><script charset="UTF-8" id="LA_COLLECT" src="https://sdk.51.la/js-sdk-pro.min.js"></script><script src="https://sdk.51.la/perf/js-sdk-perf.min.js" crossorigin="anonymous"></script><script>LA.init({id: "K16eUEIZ5lSv62zW", ck: "K16eUEIZ5lSv62zW"});
 new LingQue.Monitor().init({id: "K16eUEIZ5lSv62zW", sendSuspicious:true});
 </script><link rel="stylesheet" async href="/css/myindex.css"><link rel="stylesheet" href="https://pan.anzhiy.cn/d/anzhiyu/blog/css/APlayer.min.css?sign=9Axdhe5MrTn09bY8FtG6fu3fkcOVUZ3LFwcz2O_tZrY=:0" media="print" onload="this.media='all'"><script src="https://npm.elemecdn.com/anzhiyu-blog-static@1.0.1/js/APlayer.min.js"></script><script src="https://npm.elemecdn.com/hexo-anzhiyu-music@1.0.1/assets/js/Meting2.min.js"></script><script src="https://npm.elemecdn.com/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["meta[property=\"og:image\"]","meta[property=\"og:title\"]","meta[property=\"og:url\"]","meta[property=\"og:type\"]","meta[property=\"og:site_name\"]","meta[property=\"og:description\"]","head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
 
