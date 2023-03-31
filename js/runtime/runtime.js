@@ -37,7 +37,7 @@
     } else {
       // 如果是下班时间，插入"安知鱼-下班啦.svg"图片
       let img = document.querySelector("#workboard .workSituationImg");
-      img.src = "https://npm.elemecdn.com/anzhiyu-blog@2.0.4/img/badge/安知鱼-下班啦.svg";
+      img.src = "https://jsdelivr.codeqihan.com/gh/HolyGHostF/blog-img@latest/繁華如夢-下班了-white.svg";
       img.title = "下班了就该开开心心的玩耍，嘿嘿~";
       img.alt = "下班了就该开开心心的玩耍，嘿嘿~";
 
