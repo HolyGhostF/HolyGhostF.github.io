@@ -1,5 +1,5 @@
 (function () {
-  var grt = new Date("04/01/2021 00:00:00"); //设置网站上线时间
+  var grt = new Date("03/27/2023 00:00:00"); //设置网站上线时间
   var now = new Date();
   var dnum;
   var hnum;
