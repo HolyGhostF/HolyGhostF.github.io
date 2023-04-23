@@ -6635,7 +6635,7 @@ body[data-type="about"] #web_bg {
 #about-page .about-statistic {
   min-height: 380px;
   width: 39%;
-  background: url(https://img02.anzhiy.cn/adminuploads/1/2022/09/23/632d634f8376d.jpg) no-repeat top;
+  background: url(https://jsdelivr.codeqihan.com/gh/HolyGHostF/skill-satic-blog@latest/img/632d634f8376d.jpg) no-repeat top;
   background-size: cover;
   color: var(--anzhiyu-white);
   overflow: hidden;
@@ -6939,7 +6939,7 @@ body[data-type="about"] #web_bg {
   transition: 2s ease-in-out;
 }
 .author-content-item.game-yuanshen {
-  background: url(https://img02.anzhiy.cn/adminuploads/1/2022/12/19/63a079ca63c8a.webp) no-repeat top;
+  background: url(https://cdn.cbd.int/anqila-skill-static@1.0.0/img/63a079ca63c8a.webp) no-repeat top;
   background-size: cover;
   min-height: 300px;
   overflow: hidden;
@@ -6964,7 +6964,7 @@ body[data-type="about"] #web_bg {
   margin-right: 0.5rem;
 }
 .icon-pos-mid {
-  background: url(https://img02.anzhiy.cn/adminuploads/1/2022/09/25/632fb9cecfc8c.png);
+  background: url(https://jsdelivr.codeqihan.com/gh/HolyGHostF/skill-satic-blog@latest/img/632fb9cecfc8c.png);
 }
 .author-content-item.game-yuanshen::after {
   box-shadow: 0 -69px 203px 11px #575d8b inset;
@@ -7039,7 +7039,7 @@ body[data-type="about"] #web_bg {
 }
 
 .author-content-item.like-technology {
-  background: url(https://img02.anzhiy.cn/adminuploads/1/2022/09/24/632f0dd8f33c6.webp) no-repeat;
+  background: url(https://jsdelivr.codeqihan.com/gh/HolyGHostF/skill-satic-blog@latest/img/632f0dd8f33c6.webp) no-repeat;
   background-size: cover;
   min-height: 230px;
   color: var(--anzhiyu-white);
@@ -8746,7 +8746,7 @@ div#author-info__sayhi {
 }
 
 #aside-content > .card-info {
-  background: #fff url(https://img02.anzhiy.cn/adminuploads/1/2022/10/26/6358a07bf21fc.webp) top -24% center no-repeat;
+  background: #fff url(https://jsdelivr.codeqihan.com/gh/HolyGHostF/skill-satic-blog@latest/img/6358a07bf21fc.webp) top -24% center no-repeat;
   position: relative;
 }
 [data-theme="dark"] #aside-content > .card-info {
@@ -14963,7 +14963,7 @@ body[data-type="room"] #page .page-title {
   height: 100%;
   box-shadow: 0.125vw 0.125vw 1vw rgba(81, 137, 251, 0.5), -0.125vw 0.125vw 1vw rgba(81, 137, 251, 0.5),
     0.125vw -0.125vw 1vw rgba(81, 137, 251, 0.5), -0.125vw -0.125vw 1vw rgba(81, 137, 251, 0.5);
-  background-image: url("https://img02.anzhiy.cn/adminuploads/1/2022/10/20/6351038493d46.gif");
+  background-image: url("https://jsdelivr.codeqihan.com/gh/HolyGHostF/skill-satic-blog@latest/img/6351038493d46.gif");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -15576,7 +15576,7 @@ body[data-type="room"] #page .page-title {
 }
 
 .cuadro-l__front {
-  background-image: url("https://img02.anzhiy.cn/adminuploads/1/2022/10/20/63510384967db.jpg");
+  background-image: url("https://jsdelivr.codeqihan.com/gh/HolyGHostF/skill-satic-blog@latest/img/63510384967db.jpg");
   background-color: #d51e24;
   border: 1vw solid #d51e24;
 }
@@ -15597,7 +15597,7 @@ body[data-type="room"] #page .page-title {
 }
 
 .cuadro-r__front {
-  background-image: url("https://img02.anzhiy.cn/adminuploads/1/2022/10/20/6351038496f25.jpg");
+  background-image: url("https://jsdelivr.codeqihan.com/gh/HolyGHostF/skill-satic-blog@latest/img/6351038496f25.jpg");
   background-color: #0f1110;
   border: 0.5vw solid #0f1110;
 }
