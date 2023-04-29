@@ -12374,6 +12374,304 @@ div#swiper_container:hover {
   flex-direction: row !important;
 }
 
+
+#library_detail #start {
+	background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#library_detail .wrapper {
+	margin: 150px auto;
+}
+
+#library_detail .flip-book {
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+	display: none;
+	background-size: cover;
+}
+
+#library_detail .page {
+	padding: 20px;
+	background-color: #fdfaf7;
+	color: #785e3a;
+	border: solid 1px #c2b5a3;
+	overflow: hidden;
+}
+
+#library_detail .page .page-content {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: stretch;
+}
+
+#library_detail .page .page-content .page-header {
+	height: 30px;
+	font-size: 100%;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+#library_detail .page .page-content .page-image {
+	height: 100%;
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+#library_detail .page .page-content .page-text {
+	/* height: 100%; */
+	flex-grow: 1;
+	font-size: 80%;
+	text-align: justify;
+	/* margin-top: 10px; */
+	padding-top: 10px;
+	box-sizing: border-box;
+	border-top: solid 1px #f4e8d7;
+}
+
+#library_detail .page .page-content .page-footer {
+	height: 30px;
+	border-top: solid 1px #f4e8d7;
+	font-size: 80%;
+	color: #998466;
+}
+
+#library_detail .page.--left {
+	border-right: 0;
+	box-shadow: inset -7px 0 30px -7px rgba(0, 0, 0, 0.4);
+}
+
+#library_detail .page.--right {
+	border-left: 0;
+	box-shadow: inset 7px 0 30px -7px rgba(0, 0, 0, 0.4);
+}
+
+#library_detail .page.--right .page-footer {
+	text-align: right;
+}
+
+#library_detail .page.hard {
+	background-color: #f2e8d9;
+	border: solid 1px #998466;
+}
+
+#library_detail .page.page-cover {
+	background-color: #e3d0b5;
+	color: #785e3a;
+	border: solid 1px #998466;
+}
+
+#library_detail .page.page-cover h2 {
+	text-align: center;
+	padding-top: 50%;
+	font-size: 210%;
+}
+
+#library_detail .page.page-cover.page-cover-top {
+	box-shadow: inset 0px 0 30px 0px rgba(36, 10, 3, 0.5), -2px 0 5px 2px rgba(0, 0, 0, 0.4);
+}
+
+#library_detail .page.page-cover.page-cover-bottom {
+	box-shadow: inset 0px 0 30px 0px rgba(36, 10, 3, 0.5), 10px 0 8px 0px rgba(0, 0, 0, 0.4);
+}
+
+#library_detail #start {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+#library_detail .space-2115 {
+    background-image: url(https://jsdelivr.codeqihan.com/gh/HolyGHostF/skill-satic-blog@main/library2/3830-space-2115-homepage-banner-16747404660003.webp);
+}
+
+#library_detail .a-patchwork-nation {
+    background-image: url(https://jsdelivr.codeqihan.com/gh/HolyGHostF/skill-satic-blog@main/library2/3830-patchwork-nation-homepage-banner.webp);
+}
+
+#library_detail .force-mage {
+    background-image: url(https://jsdelivr.codeqihan.com/gh/HolyGHostF/skill-satic-blog@main/library2/3dCard2.jpg);
+}
+
+#library_detail .full-moon-king {
+    background-image: url(https://jsdelivr.codeqihan.com/gh/HolyGHostF/skill-satic-blog@main/library2/3830-fmk-homepage-banner-1.webp);
+}
+
+#library_detail .honor-in-the-dark {
+    background-image: url(https://jsdelivr.codeqihan.com/gh/HolyGHostF/skill-satic-blog@main/library2/3830-honor-homepage-banner.webp);
+}
+
+#library_detail .full-moon-king {
+    background-image: url(https://jsdelivr.codeqihan.com/gh/HolyGHostF/skill-satic-blog@main/library2/3830-fmk-homepage-banner-1.webp);
+}
+
+#library_detail .machete-clan {
+    background-image: url(https://jsdelivr.codeqihan.com/gh/HolyGHostF/skill-satic-blog@main/library2/3830-machete-clan-homepage-banner-16728218676893.webp);
+}
+
+#library_detail .marsborn {
+    background-image: url(https://jsdelivr.codeqihan.com/gh/HolyGHostF/skill-satic-blog@main/library2/3830-marsborn-homepage-banner.webp);
+}
+
+#library_detail .song-of-sable {
+    background-image: url(https://jsdelivr.codeqihan.com/gh/HolyGHostF/skill-satic-blog@main/library2/3830-song-of-sable-homepage-banner-16708365276016.webp);
+}
+
+#library_detail .the-dark-councils-blade {
+    background-image: url(https://jsdelivr.codeqihan.com/gh/HolyGHostF/skill-satic-blog@main/library2/3830-the-dark-councils-blade-homepage-banner-16751572170862.webp);
+}
+
+#library_detail .the-dark-rider {
+    background-image: url(https://jsdelivr.codeqihan.com/gh/HolyGHostF/skill-satic-blog@main/library2/3dCard1.jpg);
+}
+
+
+/*!
+ * Bootstrap v4.3.1 (https://getbootstrap.com/)
+ * Copyright 2011-2019 The Bootstrap Authors
+ * Copyright 2011-2019 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+ :root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 771px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace
+}
+
+#library_detail {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent
+}
+
+#library_detail *,#library_detail ::after,#library_detail ::before {
+    box-sizing: border-box
+}
+
+@media (min-width: 771px) {
+    #library_detail .container {
+        max-width:720px
+    }
+}
+
+#library_detail .container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto
+}
+
+#library_detail .btn-primary:hover {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc
+}
+
+#library_detail .btn-primary.focus,.btn-primary:focus {
+    box-shadow: 0 0 0 .2rem rgba(38,143,255,.5)
+}
+
+#library_detail .btn-primary.disabled,.btn-primary:disabled {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff
+}
+
+#library_detail .btn-primary:not(:disabled):not(.disabled).active,.btn-primary:not(:disabled):not(.disabled):active,.show>.btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #0062cc;
+    border-color: #005cbf
+}
+
+#library_detail .btn-primary:not(:disabled):not(.disabled).active:focus,.btn-primary:not(:disabled):not(.disabled):active:focus,.show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 .2rem rgba(38,143,255,.5)
+}
+#library_detail .btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+#library_detail button{
+    text-transform: none;
+    overflow: visible;
+}
+#library_detail .mb-3, #library_detail .my-3 {
+    margin-bottom: 1rem!important;
+    margin-top: 1rem!important;
+}
+
+#library_detail .alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb
+}
+#library_detail .alert {
+    position: relative;
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem
+}
+
+#library_detail .btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff
+}
+
 #local-search .search-dialog .local-search__hit-item:before {
   content: none !important;
 }
