@@ -56,7 +56,7 @@ function _createClass(e, r, t) {
   return r && _defineProperties(e.prototype, r), t && _defineProperties(e, t), e;
 }
 var config = {
-    src: "https://jsdelivr.codeqihan.com/gh/HolyGHostF/skill-satic-blog@latest/img/633d3fb19fee4.png",
+    src: "https://unpkg.com/anqila-skill-static@1.0.2/img/633d3fb19fee4.png",
     rows: 15,
     cols: 7,
   },

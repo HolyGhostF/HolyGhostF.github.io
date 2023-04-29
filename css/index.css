@@ -12485,47 +12485,47 @@ div#swiper_container:hover {
 	background-size: cover;
 }
 #library_detail .space-2115 {
-    background-image: url(https://jsdelivr.codeqihan.com/gh/HolyGHostF/skill-satic-blog@main/library2/3830-space-2115-homepage-banner-16747404660003.webp);
+    background-image: url(https://unpkg.com/anqila-skill-static@1.0.2/library2/3830-space-2115-homepage-banner-16747404660003.webp);
 }
 
 #library_detail .a-patchwork-nation {
-    background-image: url(https://jsdelivr.codeqihan.com/gh/HolyGHostF/skill-satic-blog@main/library2/3830-patchwork-nation-homepage-banner.webp);
+    background-image: url(https://unpkg.com/anqila-skill-static@1.0.2/library2/3830-patchwork-nation-homepage-banner.webp);
 }
 
 #library_detail .force-mage {
-    background-image: url(https://jsdelivr.codeqihan.com/gh/HolyGHostF/skill-satic-blog@main/library2/3dCard2.jpg);
+    background-image: url(https://unpkg.com/anqila-skill-static@1.0.2/library2/3dCard2.jpg);
 }
 
 #library_detail .full-moon-king {
-    background-image: url(https://jsdelivr.codeqihan.com/gh/HolyGHostF/skill-satic-blog@main/library2/3830-fmk-homepage-banner-1.webp);
+    background-image: url(https://unpkg.com/anqila-skill-static@1.0.2/library2/3830-fmk-homepage-banner-1.webp);
 }
 
 #library_detail .honor-in-the-dark {
-    background-image: url(https://jsdelivr.codeqihan.com/gh/HolyGHostF/skill-satic-blog@main/library2/3830-honor-homepage-banner.webp);
+    background-image: url(https://unpkg.com/anqila-skill-static@1.0.2/library2/3830-honor-homepage-banner.webp);
 }
 
 #library_detail .full-moon-king {
-    background-image: url(https://jsdelivr.codeqihan.com/gh/HolyGHostF/skill-satic-blog@main/library2/3830-fmk-homepage-banner-1.webp);
+    background-image: url(https://unpkg.com/anqila-skill-static@1.0.2/library2/3830-fmk-homepage-banner-1.webp);
 }
 
 #library_detail .machete-clan {
-    background-image: url(https://jsdelivr.codeqihan.com/gh/HolyGHostF/skill-satic-blog@main/library2/3830-machete-clan-homepage-banner-16728218676893.webp);
+    background-image: url(https://unpkg.com/anqila-skill-static@1.0.2/library2/3830-machete-clan-homepage-banner-16728218676893.webp);
 }
 
 #library_detail .marsborn {
-    background-image: url(https://jsdelivr.codeqihan.com/gh/HolyGHostF/skill-satic-blog@main/library2/3830-marsborn-homepage-banner.webp);
+    background-image: url(https://unpkg.com/anqila-skill-static@1.0.2/library2/3830-marsborn-homepage-banner.webp);
 }
 
 #library_detail .song-of-sable {
-    background-image: url(https://jsdelivr.codeqihan.com/gh/HolyGHostF/skill-satic-blog@main/library2/3830-song-of-sable-homepage-banner-16708365276016.webp);
+    background-image: url(https://unpkg.com/anqila-skill-static@1.0.2/library2/3830-song-of-sable-homepage-banner-16708365276016.webp);
 }
 
 #library_detail .the-dark-councils-blade {
-    background-image: url(https://jsdelivr.codeqihan.com/gh/HolyGHostF/skill-satic-blog@main/library2/3830-the-dark-councils-blade-homepage-banner-16751572170862.webp);
+    background-image: url(https://unpkg.com/anqila-skill-static@1.0.2/library2/3830-the-dark-councils-blade-homepage-banner-16751572170862.webp);
 }
 
 #library_detail .the-dark-rider {
-    background-image: url(https://jsdelivr.codeqihan.com/gh/HolyGHostF/skill-satic-blog@main/library2/3dCard1.jpg);
+    background-image: url(https://unpkg.com/anqila-skill-static@1.0.2/library2/3dCard1.jpg);
 }
 
 
@@ -15261,7 +15261,7 @@ body[data-type="room"] #page .page-title {
   height: 100%;
   box-shadow: 0.125vw 0.125vw 1vw rgba(81, 137, 251, 0.5), -0.125vw 0.125vw 1vw rgba(81, 137, 251, 0.5),
     0.125vw -0.125vw 1vw rgba(81, 137, 251, 0.5), -0.125vw -0.125vw 1vw rgba(81, 137, 251, 0.5);
-  background-image: url("https://jsdelivr.codeqihan.com/gh/HolyGHostF/skill-satic-blog@latest/img/6351038493d46.gif");
+  background-image: url("https://unpkg.com/anqila-skill-static@1.0.2/img/6351038493d46.gif");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -15874,7 +15874,7 @@ body[data-type="room"] #page .page-title {
 }
 
 .cuadro-l__front {
-  background-image: url("https://jsdelivr.codeqihan.com/gh/HolyGHostF/skill-satic-blog@latest/img/63510384967db.jpg");
+  background-image: url("https://unpkg.com/anqila-skill-static@1.0.2/img/63510384967db.jpg");
   background-color: #d51e24;
   border: 1vw solid #d51e24;
 }
@@ -15895,7 +15895,7 @@ body[data-type="room"] #page .page-title {
 }
 
 .cuadro-r__front {
-  background-image: url("https://jsdelivr.codeqihan.com/gh/HolyGHostF/skill-satic-blog@latest/img/6351038496f25.jpg");
+  background-image: url("https://unpkg.com/anqila-skill-static@1.0.2/img/6351038496f25.jpg");
   background-color: #0f1110;
   border: 0.5vw solid #0f1110;
 }
