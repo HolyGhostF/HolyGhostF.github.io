@@ -411,6 +411,7 @@ function addRightMenuClickEvent() {
     rm.hideRightMenu();
     return false;
   });
+  $("#menu-dance").on("click", anzhiyu.loadWebGLDance);
   $("#menu-translate").on("click", function () {
     rm.hideRightMenu();
     translateInitialization();

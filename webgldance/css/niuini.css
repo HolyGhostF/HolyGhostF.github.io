@@ -1,0 +1,149 @@
+body {
+    /* set margin to 0 and overflow to hidden, to go fullscreen */
+    margin: 0;
+    overflow: hidden;
+
+
+}
+/*FPS显示*/
+.infoFps{
+    position: fixed;
+    top:5px;
+    left:5px;
+    width: 100%;
+    z-index:1;
+    
+}
+
+#guiDat{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    display: none;
+    z-index:3;
+}
+/*加载日志*/
+.infoLog{
+    position: fixed;
+    bottom: 25px;
+    left:5px;
+    width: auto;
+    /*color: blue;*/
+    z-index:1;
+}
+/*进度条*/
+.foot{
+    position:absolute;
+    margin:auto;
+    left:0; 
+    right:0; 
+    bottom:40%;
+    width:100%; 
+    text-align: center;
+    z-index:3;
+
+}
+.smallsize-font-chrome{
+    font-size:12px; 
+    -webkit-transform-origin-x: 0;
+    -webkit-transform: scale(0.90);
+}
+
+
+.smallsize-font {
+   font-size: 10.8px;
+}
+/*信息*/
+.tipAlert{
+    position: fixed;
+    top: 5%;
+    margin:auto;
+    left:0; 
+    right:0; 
+    width: 100%;
+    text-align: center;
+    /*color: blue;*/
+    z-index:2;
+}
+/*底部控制器*/
+.footControler{
+    position: fixed;
+    bottom: 5px;
+    margin:auto;
+    width: 100%;
+    height: auto;
+    z-index:1;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.controlerPause{
+    position: fixed;
+    display: none;
+    bottom: 7px;
+    margin:auto;
+    left:15px; 
+    text-align: center;  
+    cursor: pointer; 
+}
+
+.controlerFullscreen{
+    position: fixed;
+    
+    bottom: 7px;
+    margin:auto;
+    right:15px; 
+    text-align: center;
+    cursor: pointer;
+}
+
+.controlerVolume{
+    position: fixed;
+    
+    bottom: 5px;
+    margin:auto;
+    right: 45px; 
+    text-align: center;
+    cursor: pointer;
+}
+.controlerHeadphones{
+    position: fixed;
+    bottom: 7px;
+    margin:auto;
+    right: 80px; 
+    text-align: center;
+    cursor: pointer;
+}
+.controlerVideo{
+    position: fixed;
+    bottom: 7px;
+    margin:auto;
+    right: 110px; 
+    text-align: center;
+    cursor: pointer;
+}
+.controlerInfo{
+    position: fixed;
+    bottom: 7px;
+    margin:auto;
+    right: 140px; 
+    text-align: center;
+    cursor: pointer;
+}
+.controlerCog{
+    position: fixed;
+    top: 7px;
+    margin:auto;
+    right: 15px; 
+    text-align: center;
+    cursor: pointer;
+}
+
+.controlerClose{
+    position: fixed;
+    top: 7px;
+    margin:auto;
+    right: 45px; 
+    text-align: center;
+    cursor: pointer;
+}

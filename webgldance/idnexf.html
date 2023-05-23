@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <title>NIUINI3D动漫展示-首页</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+    <meta charset="utf-8">
+    <!-- Flat UI necessary-->
+    <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.2.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcdn.net/ajax/libs/flat-ui/2.3.0/css/flat-ui.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/anqila-webgl-star@1.0.0/css/niuini.css" rel="stylesheet">
+    
+
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+<script src="https://unpkg.com/anqila-webgl-star@1.0.2/js/jquery.min.js"></script>
+<div id="wrap">
+
+        
+        <div class="container">
+
+        <!-- 播放窗口 -->
+        <div class="jumbotron project_container" >
+            <!--fixed  Fps Tip-->
+            <div class="infoFps" >
+                <p id="otherinfo2" class="smallsize-font smallsize-font-chrome"></p>
+            </div>
+            <!--gui.dat控件-->
+            <div id="guiDat">
+            </div>
+
+            <!--fixed Row 警示框-->
+            <div class="row tipAlert"  style="display:none;">
+
+
+                <div id="myAlert" class="col-lg-offset-4 col-md-offset-4 col-md-offset-3 col-sm-offset-3 col-xs-offset-1 col-xs-10 col-sm-6 col-md-4 alert alert-warning alert-dismissable " data-dismiss="modal" aria-hidden="true">
+                    <button type="button" id ="closeAlertBtn" class="close">
+                        &times;
+                    </button>
+                    推荐使用WebKit、Gecko内核浏览器体验,例如Chrome、Firefox、360浏览器等。
+                    <p style="text-align: left;">
+                        pc端：按住鼠标左键，移动鼠标可移动视角；使用滚轮或按住中键，可缩放视图大小；按住右键，可平移视角位置；
+                    </p>
+                    <p style="text-align: left;">
+                        移动端：使用单指触摸移动视角；双指缩放视图大小；三指平移视角位置
+                    </p>
+
+
+                    <button   class="begainPlayBtn close btn btn-default  " style="position: relative; right: 46%;display: none;">
+                        <span id="begainPlayBtn" class="glyphicon glyphicon-play" >开始</span>
+                    </button>
+                </div>
+
+            </div>
+
+            <!--fixed Row 进度条-->
+            <div class="row foot">
+                <div id="progressModular" class="col-lg-offset-4 col-md-offset-4 col-md-offset-3 col-sm-offset-3 col-xs-offset-1 col-xs-10 col-sm-6 col-md-4 ">
+                    <p id="progressTitle"></p>
+                    <div id="progressBarF" class="progress progress-striped  active">
+                        <div id="progressBar" class="progress-bar progress-bar-info " style="width: 0%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!--fixed 日志显示-->
+            <div class=" infoLog">
+                <p align="left" class=" text-primary smallsize-font smallsize-font-chrome" id="progressLog">
+                </p>
+            </div>
+
+
+            <div class="footControler">
+
+
+                <div class=" controlerPause " data-toggle="tooltip" title="播放">
+                    <i  id="controlerPause" class="fa fa-play" aria-hidden="true"></i>
+
+                </div>
+
+
+                <div class=" controlerFullscreen " data-toggle="tooltip" title="全屏"  >
+                    <i id="controlerFullscreen" class="fa fa-expand" aria-hidden="true"></i>
+                </div>
+
+                <div class=" controlerVolume " data-toggle="tooltip" title="音量100%">
+                    <i id="controlerVolume" class="fa fa-volume-up" aria-hidden="true"></i>
+
+                </div>
+
+                <div class=" controlerHeadphones " data-toggle="tooltip" title="3D音效"  >
+                    <i  id="controlerHeadphones" class="fa fa-headphones" aria-hidden="true"></i>
+                </div>
+
+                <div class=" controlerVideo " data-toggle="tooltip"  title="自动镜头" >
+                    <i id="controlerVideo" class="fa fa-video-camera" aria-hidden="true"></i>
+                </div>
+
+                <div class=" controlerInfo " data-toggle="tooltip" title="显示信息"  >
+                    <i id="controlerInfo" class="fa fa-info-circle" aria-hidden="true"></i>
+                </div>
+
+                <div class=" controlerCog " data-toggle="tooltip" data-placement="bottom" title="设置"  >
+                    <i  id="controlerCog" class="fa fa-cog" aria-hidden="true"></i>
+                </div>
+                <div class=" controlerClose " data-toggle="tooltip" data-placement="bottom" title="关闭"  >
+                    <i id="controlerClose" class="fa fa-close" aria-hidden="true"></i>
+                </div>
+                
+
+            </div>
+        </div>
+    </div>
+    <div id="push"></div>
+</div>
+    
+    <!-- footer -->
+
+    <script src="https://cdn.bootcdn.net/ajax/libs/flat-ui/2.3.0/js/flat-ui.min.js"></script>
+
+    <script src="https://unpkg.com/anqila-webgl-star@1.0.0/js/layer.js"></script>
+
+    <script src="https://unpkg.com/anqila-webgl-star@1.0.0/js/threejs/Three.js"></script>
+    <script src="https://unpkg.com/anqila-webgl-star@1.0.0/js/threejs/dat.gui_modify.js"></script>
+
+    <script src="https://unpkg.com/anqila-webgl-star@1.0.0/js/threejs/OrbitControls.js"></script>
+
+    <script src="https://unpkg.com/anqila-webgl-star@1.0.0/js/threejs/mmdPlay/libs/mmdparser.min.js"></script>
+    <script src="https://unpkg.com/anqila-webgl-star@1.0.0/js/threejs/mmdPlay/libs/ammo.js"></script>
+    <script src="https://unpkg.com/anqila-webgl-star@1.0.0/js/threejs/mmdPlay/libs/Detector.js"></script>
+
+    <script src="https://unpkg.com/anqila-webgl-star@1.0.0/js/threejs/mmdPlay/loaders/TGALoader.js"></script>
+    <script src="https://unpkg.com/anqila-webgl-star@1.0.0/js/threejs/mmdPlay/loaders/MMDLoader.js"></script>
+
+    <script src="https://unpkg.com/anqila-webgl-star@1.0.0/js/threejs/mmdPlay/effects/OutlineEffect.js"></script>
+
+    <script src="https://unpkg.com/anqila-webgl-star@1.0.0/js/threejs/mmdPlay/animation/CCDIKSolver.js"></script>
+    <script src="https://unpkg.com/anqila-webgl-star@1.0.0/js/threejs/mmdPlay/animation/MMDPhysics.js"></script>
+
+    <script src="https://unpkg.com/anqila-webgl-star@1.0.0/js/threejs/mmdPlay/Mirror/Mirror.js"></script>
+    <script src="https://unpkg.com/anqila-webgl-star@1.0.0/js/threejs/mmdPlay/SkyShader/SkyShader.js"></script>
+    <script src="https://unpkg.com/anqila-webgl-star@1.0.0/js/threejs/mmdPlay/jq/jquery.mousewheel.min.js"></script>
+
+    <script src="https://unpkg.com/anqila-webgl-star@1.0.0/js/threejs/project/control.js"></script>
+    <script>
+        // var modelFile =    "http://file.niuini.com/model/10/Tda式 洛天依·三月雨常服.pmx";
+        // var modelFile = "./hutao/胡桃.pmx";
+        let binlist = ['./heita/黑塔.pmx', 'http://file.niuini.com/model/10/Tda式 洛天依·三月雨常服.pmx', './Bailu/白露1.0.pmx', './hutao/胡桃.pmx']
+        let appp = Math.floor(Math.random()*5);
+        var  modelFile = binlist[appp];
+        // var motionFiles = ["http://file.niuini.com/motion/201904202121169044.vmd"];
+        // var cameraFiles = ["http://file.niuini.com/camera/201904202121539841.vmd"];
+        // var audioFile =    "http://file.niuini.com/audio/201904202132351044.mp3";
+        var motionFiles = ["./dance/mo30486ed1e37cede0feae8cb196e1b2e7.vmd"];
+        var cameraFiles = ["./dance/jinga7f6234e728a940a72fff0f5871605ff.vmd"];
+        var audioFile =    "./dance/【动作配布】Stay Tonight Heaven Lee Ver.mp3";
+    </script>
+    <script src="https://unpkg.com/anqila-webgl-star@1.0.3/js/threejs/project/main.js"></script>
+    <!-- <script src="./js/threejs/main.js"></script> -->
+</body>
+
+</html>
