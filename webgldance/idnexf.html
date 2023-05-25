@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
     <meta charset="utf-8">
     <!-- Flat UI necessary-->
-    <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.2.3/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.bootcdn.net/ajax/libs/flat-ui/2.3.0/css/flat-ui.min.css" rel="stylesheet">
-    <link href="https://unpkg.com/anqila-webgl-star@1.0.0/css/niuini.css" rel="stylesheet">
+    <link href="https://unpkg.com/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/anqila-webgl-star@1.0.6/css/dist/css/flat-ui.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/anqila-webgl-star@1.0.7/css/niuini.css" rel="stylesheet">
     
 
-    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="https://unpkg.com/font-awesome@4.7.0/css/font-awesome.min.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -21,8 +21,11 @@
 
 </head>
 
-<body>
+<body style="overscroll-behavior: none;">
 <script src="https://unpkg.com/anqila-webgl-star@1.0.2/js/jquery.min.js"></script>
+<div id="overlay">
+    <button id="startButton">Play</button>
+</div>
 <div id="wrap">
 
         
@@ -125,7 +128,7 @@
     </div>
     <div id="push"></div>
 </div>
-    
+    <script src="./js/newindex.js"></script>
     <!-- footer -->
 
     <script src="https://cdn.bootcdn.net/ajax/libs/flat-ui/2.3.0/js/flat-ui.min.js"></script>
@@ -155,16 +158,47 @@
 
     <script src="https://unpkg.com/anqila-webgl-star@1.0.0/js/threejs/project/control.js"></script>
     <script>
-        let binlist = ['./heita/黑塔.pmx', './luotianyi/洛天依·三月雨常服.pmx', './Bailu/白露1.0.pmx', './hutao/胡桃.pmx', './ganyu/甘雨.pmx', './keli/可莉2.0.pmx', './keqing/刻晴.pmx', './leidian/雷电将军.pmx', './naxida/纳西妲.pmx', './nilu/妮露.pmx', './qiqi/七七.pmx', './shenglilinghua/神里绫华.pmx', './xinghai/珊瑚宫心海.pmx', './yaoyao/瑶瑶.pmx']
+        let binlist = ['./heita/黑塔.pmx', './Bailu/白露1.0.pmx', './aishida/星穹铁道—艾丝妲160.pmx', './buluoniya/布洛妮娅 1.0.pmx', './fuxuan/符玄（鞋+发饰补差145cm）(修).pmx', './jizhi/姬子2.0.pmx', './kafka/卡芙卡.pmx', './kelala/克拉拉.pmx', './lishushang/李素裳1.0.pmx', './nvzhu/女主1.0.pmx', './qingque/青雀（分桦）.pmx', './sangyueqi/三月七 1.0.pmx', './tingyun/停云.pmx', './xier/希儿1.0.pmx', './xiluwa/希露瓦1.0.pmx', './yinglan/银狼.pmx', './luotianyi/洛天依·三月雨常服.pmx', './hutao/胡桃.pmx', './ganyu/甘雨.pmx', './keli/可莉2.0.pmx', './keqing/刻晴.pmx', './leidian/雷电将军.pmx', './naxida/纳西妲.pmx', './nilu/妮露.pmx', './qiqi/七七.pmx', './shenglilinghua/神里绫华.pmx', './xinghai/珊瑚宫心海.pmx', './yaoyao/瑶瑶.pmx', './baconshengzhi/八重神子.pmx']
         let appp = Math.floor(Math.random()*binlist.length);
-        var  modelFile = binlist[appp];
-        // var modelFile = "./luotianyi/洛天依·三月雨常服.pmx";
-        var motionFiles = ["./dance/mo30486ed1e37cede0feae8cb196e1b2e7.vmd"];
-        var cameraFiles = ["./dance/jinga7f6234e728a940a72fff0f5871605ff.vmd"];
-        var audioFile =    "./dance/【动作配布】Stay Tonight Heaven Lee Ver.mp3";
+        var  modelFile;
+        var motionFiles;
+        var cameraFiles;
+        var audioFile;
+        let cardF = window.parent.document.querySelectorAll('.webgls .card');
+        let cardE = window.parent.document.querySelectorAll('.webglsMotions .card');
+        // let flag = false;
+        let cardFFlag = false;
+        let cardEFlag = false;
+        cardF.forEach(card => {
+            card.children[0].addEventListener('click', function() {
+                modelFile = binlist[card.getAttribute('data-num')];
+
+                let seci0 = window.parent.document.querySelector('#sections');
+                seci0.children[0].className = 'selected';
+                seci0.children[1].className = '';
+                $(window.parent.document.querySelector('.webglsMotions')).stop().fadeIn(500);
+                $(window.parent.document.querySelector('.webgls')).stop().fadeOut(500);
+                InitMotCamAuto();
+                cardFFlag = true;
+            })
+        })
+        let fuModelPath = binlist[appp];
+        let MotCamAuto = [{'motionName':'红昭愿', 'motionFiles':'./luotianyi/201904202121169044.vmd', 'cameraFiles':'./luotianyi/201904202121539841.vmd', 'audioFile': "./luotianyi/201904202132351044.mp3"}, {'motionName':'Stay Tonight Heaven Lee Ver','motionFiles':'./dance/mo30486ed1e37cede0feae8cb196e1b2e7.vmd', 'cameraFiles':'./dance/jinga7f6234e728a940a72fff0f5871605ff.vmd', 'audioFile': "./dance/【动作配布】Stay Tonight Heaven Lee Ver.mp3"}];
+
+        function InitMotCamAuto() {
+            cardE.forEach(card => {
+                card.children[0].addEventListener('click', function() {
+                    let mot = MotCamAuto[card.getAttribute('data-num')];
+                    motionFiles = [mot.motionFiles];
+                    cameraFiles = [mot.cameraFiles];
+                    audioFile =    mot.audioFile;
+                    cardEFlag = true;
+                    LoadMMDFileInit();
+                })
+            })            
+        }
     </script>
-    <script src="https://unpkg.com/anqila-webgl-star@1.0.3/js/threejs/project/main.js"></script>
-    <!-- <script src="./js/threejs/main.js"></script> -->
+    <script src="https://unpkg.com/anqila-webgl-star@1.0.7/js/threejs/project/main.js"></script>
 </body>
 
 </html>

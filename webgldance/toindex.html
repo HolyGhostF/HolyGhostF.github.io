@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/font-awesome@4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/anqila-webgl-star@1.0.7/css/style.css">
+</head>
+<body>
+    <div id="panel">
+        <input type="checkbox" name="" id="checkbox">
+        <label for="checkbox" style="position:fixed;">
+            <i class="fa fa-outdent" style="color:#049EF4;"></i>
+        </label>
+        <div id="header">
+            <h1>
+                <a href="/">繁華如夢</a>
+            </h1>
+            <div id="sections">
+                <span>动作页</span>
+                <span class="selected">模型页</span>
+            </div>
+            <div id="expandButton"></div>
+        </div>
+        <div id="panelScrim"></div>
+        <div id="contentWrapper">
+            <div id="content">
+                <img id="previewsToggler" src="./files/thumbnails.svg" width="20" height="20">
+                <div class="webgls">
+                </div>
+                <div class="webglsMotions" style="display: none;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <iframe id="viewer" name="viewer" allow="fullscreen; xr-spatial-tracking;" src="./idnexf.html" style="display: unset;"></iframe>
+    <script src="https://unpkg.com/anqila-webgl-star@1.0.7/js/index.js"></script>
+</body>
+</html>
