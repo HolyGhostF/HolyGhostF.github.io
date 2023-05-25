@@ -2,10 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-    <title>恋舞动漫展示-首页</title>
+    <link rel="icon" href="./faviconq.ico">
+    <title>繁華如夢·恋舞动漫展示页</title>
+
     <link rel="stylesheet" href="https://unpkg.com/font-awesome@4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://unpkg.com/anqila-webgl-star@1.0.7/css/style.css">
     <style>
@@ -25,6 +28,11 @@
         #panel #sections span {
             cursor: pointer;
         }
+        #header .logo {
+            height: calc( 3.6rem - 2 * .7rem );;
+            /* margin-right: .7rem; */
+            vertical-align: top;
+        }
     </style>
 </head>
 <body>
@@ -34,6 +42,7 @@
             <i class="fa fa-outdent" style="color:#049EF4;"></i>
         </label>
         <div id="header">
+            <span><a aria-current="page" href="/webgldance/toindex.html" class="router-link-active router-link-exact-active"><img class="logo" src="./faviconq.ico" alt="繁華如夢·恋舞动漫展示页"></a></span>
             <h1>
                 <a href="/">繁華如夢</a>
             </h1>
