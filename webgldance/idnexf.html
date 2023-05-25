@@ -18,7 +18,19 @@
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+    <style>
+        /* 鼠标图标 */
+        body {
+        cursor: url("./files/x1.cur"), auto;
+        }
+        a,
+        [type="button"]:not(:disabled),
+        [type="reset"]:not(:disabled),
+        [type="submit"]:not(:disabled),
+        button:not(:disabled){
+        cursor: url("./files/x2.cur"), auto !important;
+        }
+    </style>
 </head>
 
 <body style="overscroll-behavior: none;">
@@ -172,30 +184,32 @@
         cardF.forEach(card => {
             card.children[0].addEventListener('click', function() {
                 modelFile = binlist[card.getAttribute('data-num')];
-
-                let seci0 = window.parent.document.querySelector('#sections');
-                seci0.children[0].className = 'selected';
-                seci0.children[1].className = '';
-                $(window.parent.document.querySelector('.webglsMotions')).stop().fadeIn(500);
-                $(window.parent.document.querySelector('.webgls')).stop().fadeOut(500);
-                InitMotCamAuto();
                 cardFFlag = true;
+                if (!cardEFlag && cardFFlag) ReSelected(0, 1, '.webglsMotions', '.webgls');
+                if (cardFFlag && cardEFlag) LoadMMDFileInit();
             })
         })
         let fuModelPath = binlist[appp];
         let MotCamAuto = [{'motionName':'红昭愿', 'motionFiles':'./luotianyi/201904202121169044.vmd', 'cameraFiles':'./luotianyi/201904202121539841.vmd', 'audioFile': "./luotianyi/201904202132351044.mp3"}, {'motionName':'Stay Tonight Heaven Lee Ver','motionFiles':'./dance/mo30486ed1e37cede0feae8cb196e1b2e7.vmd', 'cameraFiles':'./dance/jinga7f6234e728a940a72fff0f5871605ff.vmd', 'audioFile': "./dance/【动作配布】Stay Tonight Heaven Lee Ver.mp3"}];
 
-        function InitMotCamAuto() {
-            cardE.forEach(card => {
-                card.children[0].addEventListener('click', function() {
-                    let mot = MotCamAuto[card.getAttribute('data-num')];
-                    motionFiles = [mot.motionFiles];
-                    cameraFiles = [mot.cameraFiles];
-                    audioFile =    mot.audioFile;
-                    cardEFlag = true;
-                    LoadMMDFileInit();
-                })
-            })            
+        cardE.forEach(card => {
+            card.children[0].addEventListener('click', function() {
+                let mot = MotCamAuto[card.getAttribute('data-num')];
+                motionFiles = [mot.motionFiles];
+                cameraFiles = [mot.cameraFiles];
+                audioFile =    mot.audioFile;
+                cardEFlag = true;
+                if (!cardFFlag && cardEFlag) ReSelected(1, 0, '.webgls', '.webglsMotions');
+                if (cardFFlag && cardEFlag) LoadMMDFileInit();
+            })
+        })            
+
+        function ReSelected(n, m, c1, c2) {
+            let seci0 = window.parent.document.querySelector('#sections');
+            seci0.children[n].className = 'selected';
+            seci0.children[m].className = '';
+            $(window.parent.document.querySelector(c1)).stop().fadeIn(500);
+            $(window.parent.document.querySelector(c2)).stop().fadeOut(500);
         }
     </script>
     <script src="https://unpkg.com/anqila-webgl-star@1.0.7/js/threejs/project/main.js"></script>

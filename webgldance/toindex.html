@@ -8,11 +8,29 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://unpkg.com/font-awesome@4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://unpkg.com/anqila-webgl-star@1.0.7/css/style.css">
+    <style>
+        /* 鼠标图标 */
+        body {
+        cursor: url("./files/x1.cur"), auto;
+        }
+        a,
+        [type="button"]:not(:disabled),
+        [type="reset"]:not(:disabled),
+        [type="submit"]:not(:disabled),
+        button:not(:disabled),
+        #panel #sections span:not(:disabled),
+        #panel .itcheck:not(:disabled) {
+        cursor: url("./files/x2.cur"), auto !important;
+        }
+        #panel #sections span {
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
     <div id="panel">
         <input type="checkbox" name="" id="checkbox">
-        <label for="checkbox" style="position:fixed;">
+        <label for="checkbox" style="position:fixed;" class="itcheck">
             <i class="fa fa-outdent" style="color:#049EF4;"></i>
         </label>
         <div id="header">
