@@ -10,6 +10,6 @@ document.addEventListener('DOMContentLoaded', function() {
 			LoadMMDFileInit();
             flag = true;
 		}
-        document.querySelector('#progressBar').style.display = 'block';
+        document.querySelector('#progressBarF').style.display = 'block';
     }
 })
