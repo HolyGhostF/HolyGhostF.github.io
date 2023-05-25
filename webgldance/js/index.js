@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
         let keyi = Object.keys(motion)[0];
         VMXmotion.push(`<h2 data-category="${keyi}">${keyi}</h2>`);
         motion[keyi].forEach(m => {
-            let imgPathload = 'https://unpkg.com/anqila-webgl-star@1.0.7' + coverImgArr[pnum]
+            let imgPathload = 'https://unpkg.com/anqila-webgl-star@1.0.7/coverImg' + coverImgArr[pnum]
             VMXmotion.push(`<div class="card" data-num=${pnum}>
         <a href="javascript:;" target="viewer">
             <div class="cover">
