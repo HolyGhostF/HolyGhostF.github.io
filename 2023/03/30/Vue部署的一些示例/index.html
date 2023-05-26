@@ -234,7 +234,7 @@ if (true) {
   const init = () => {
     twikoo.init(Object.assign({
       el: '#twikoo-wrap',
-      envId: 'https://myDreamTwikoo.zeabur.app',
+      envId: 'https://mydreamtwikoo.zeabur.app',
       region: '',
       onCommentLoaded: function () {
         btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
@@ -246,7 +246,7 @@ if (true) {
     const countELement = document.getElementById('twikoo-count')
     if(!countELement) return
     twikoo.getCommentsCount({
-      envId: 'https://myDreamTwikoo.zeabur.app',
+      envId: 'https://mydreamtwikoo.zeabur.app',
       region: '',
       urls: [window.location.pathname],
       includeReply: false
@@ -295,7 +295,7 @@ if (true) {
   const getComment = () => {
     const runTwikoo = () => {
       twikoo.getRecentComments({
-        envId: 'https://myDreamTwikoo.zeabur.app',
+        envId: 'https://mydreamtwikoo.zeabur.app',
         region: '',
         pageSize: 6,
         includeReply: true
@@ -389,7 +389,7 @@ document.addEventListener('visibilitychange', function () {
 })</script><div class="js-pjax"><script data-pjax="data-pjax">var commentBarrageConfig = {
   maxBarrage: 1,
   barrageTime: 4000,
-  twikooUrl: "https://myDreamTwikoo.zeabur.app",
+  twikooUrl: "https://mydreamtwikoo.zeabur.app",
   accessToken: "44fd7d73d90e48ce9e893475f70aa232",
   pageUrl: window.location.pathname,
   barrageTimer: [],
