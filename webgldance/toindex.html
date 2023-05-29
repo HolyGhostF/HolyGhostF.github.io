@@ -10,43 +10,7 @@
     <title>繁華如夢·恋舞动漫展示页</title>
 
     <link rel="stylesheet" href="https://unpkg.com/font-awesome@4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/anqila-webgl-star@1.0.7/css/style.css">
-    <style>
-        /* 鼠标图标 */
-        body {
-        cursor: url("./files/x1.cur"), auto;
-        }
-        a,
-        [type="button"]:not(:disabled),
-        [type="reset"]:not(:disabled),
-        [type="submit"]:not(:disabled),
-        button:not(:disabled),
-        #panel #sections span:not(:disabled),
-        #panel .itcheck:not(:disabled) {
-        cursor: url("./files/x2.cur"), auto !important;
-        }
-        #panel #sections span {
-            cursor: pointer;
-        }
-        #header .logo {
-            height: calc( 3.6rem - 2 * .7rem );;
-            /* margin-right: .7rem; */
-            vertical-align: top;
-        }
-        .bgm button {
-            background: transparent;
-            border: 0;
-            border: 1px solid rgb(255, 255, 255);
-            border-radius: 4px;
-            color: #ffffff;
-            padding: 12px 18px;
-            text-transform: uppercase;
-            cursor: pointer;
-            position: absolute;
-            left: 48%;
-            top: 48%;
-        }
-    </style>
+    <link rel="stylesheet" href="https://unpkg.com/anqila-webgl-star@1.0.8/css/style.css">
 </head>
 <body>
     <div class="bgm" style="width: 100%;height: 100%;">
@@ -90,60 +54,6 @@
         </div>
     </div>
     <iframe id="viewer" name="viewer" allow="fullscreen; xr-spatial-tracking;" src="./idnexf.html"></iframe>
-    <script src="./js/index.js"></script>
-    <script>
-        var ua = navigator.userAgent;
-        var ipad = ua.match(/(iPad).*OS\s([\d_]+)/),
-            isIphone = !ipad && ua.match(/(iPhone\sOS)\s([\d_]+)/),
-            isAndroid = ua.match(/(Android)\s+([\d.]+)/),
-            isMobile = isIphone || isAndroid;
-
-        function set_video_attr(id){
-            var height = document.body.clientHeight
-            var width = document.body.clientWidth
-            var video_item = document.getElementById(id);
-
-            if (height / width < 0.56){
-                video_item.setAttribute('width', '100%');
-                video_item.setAttribute('height', 'auto');
-            } else {
-                video_item.setAttribute('height', '100%');
-                video_item.setAttribute('width', 'auto');
-            }
-        }
-
-        function InitIndexImg() {
-            video_url = './files/3c268ea7db542019ccf8ca5b8c528a5f_preview.mp4'
-            pre_show_image_url = './files/27c6dad7bb2b5706e14dc8d8806be8f5.jpg'
-
-            banner_obj = document.getElementById("banner")
-            banner_obj.style.cssText = "background: url('" + pre_show_image_url + "') no-repeat;"
-
-            vvd_banner_obj = document.getElementById("vvd_banner_img")
-            vvd_banner_content = "<img id='banner_img_item' src='" + pre_show_image_url + "'style='position: fixed; z-index: -999'>"
-            vvd_banner_obj.innerHTML = vvd_banner_content 
-
-            if (!isMobile) {
-                video_html_res = "<video id='video_item' style='position: fixed; z-index: -888;'  muted='muted' src=" + video_url + " autoplay='autoplay' loop='loop'></video>"
-                document.getElementById("banner_video_insert").innerHTML = video_html_res;
-                set_video_attr('video_item')
-                set_video_attr('banner_img_item')
-            }
-        }
-
-        InitIndexImg();
-
-        if (!isMobile){
-            window.onresize = function(){
-                set_video_attr('video_item')
-                set_video_attr('banner_img_item')
-                }
-            }
-        document.querySelector('.bgm').addEventListener('click', function() {
-            this.style.display = 'none';
-            document.querySelector('.itcheck').style.display = 'block';
-            document.querySelector('#viewer').style.display = 'unset';
-        });
-    </script>
+    <script src="https://unpkg.com/anqila-webgl-star@1.0.8/js/index.js"></script>
 </body>
 </html>
