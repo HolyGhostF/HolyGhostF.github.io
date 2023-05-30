@@ -8339,14 +8339,14 @@ html.hide-aside .layout > div:first-child {
 }
 
 /* live2d三月七 */
-#live2d-webgl {
+/* #live2d-webgl {
   position: fixed;
   left: -10px;
   bottom: 40px;
   width: 200px!important;
   height: 400px!important;
   pointer-events: none!important;
-}
+} */
 
 #oml-canvas {
   z-index: 8;
