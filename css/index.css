@@ -8348,9 +8348,6 @@ html.hide-aside .layout > div:first-child {
   pointer-events: none!important;
 } */
 
-#oml-canvas {
-  z-index: 8;
-}
 /* #nav-live2d {
   display: flex;
   align-items: center;
